@@ -1,9 +1,16 @@
+// script.js
+
 function getFormvalue() {
-    //Write your code here
-	var form = document.getElementById('form1');
-	var firstName = form.elements['fname'].value;
-    var lastName = form.elements['lname'].value;
-	alert(firstName+''+lastName);
-	
-return false;
+    // Get the form element
+    var form = document.getElementById("form1");
+
+    // Access the form elements by their name attributes
+    var firstName = form.elements["fname"].value;
+    var lastName = form.elements["lname"].value;
+
+    // Display the form values using alert
+    alert("First Name: " + firstName + "\nLast Name: " + lastName);
+
+    // Prevent the form from submitting (for this example)
+    return false;
 }
